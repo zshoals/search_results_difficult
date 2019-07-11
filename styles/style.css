@@ -43,14 +43,13 @@ header {
 }
 
 footer {
-    height: auto;
     width: 100%;
 }
 
 .header-wrapper {
     display: grid;
     grid: 1fr 1fr / 1fr 7fr 5fr 1fr;
-    height: 150px;
+    height: auto;
     width: 100%;
     background-color: rgb(20, 20, 20);
     border-bottom: 1px solid lightgrey;
@@ -59,7 +58,7 @@ footer {
 .central-wrapper {
     display: grid;
     grid-auto-rows: auto;
-    grid: 300px / 1fr 7fr 6fr;
+    grid: 50px / 1fr 7fr 6fr;
     height: auto;
     width: 100%;
     background-color: rgb(20, 20, 20);
@@ -68,7 +67,6 @@ footer {
 .footer-wrapper {
     display: grid;
     grid: 1fr 1fr / 1fr 7fr 5fr 1fr;
-    height: 100px;
     width: 100%;
     background-color: rgb(20, 20, 20);
     border-top: 1px solid lightgrey;
@@ -95,8 +93,70 @@ footer {
 }
 
 .sort-options {
+    margin: 50px 0px 0px 0px;
+    word-spacing: 30px;
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
     justify-items: end;
     align-items: end;
+}
+
+#result-count {
+    grid-column: 2 / span 1;
+    margin: 20px 0px;
+}
+
+.search-results {
+    grid-column: 2 / span 1;
+    margin: 0px 0px 50px 0px;
+}
+
+.url-expand-details {
+    display: inline-block;
+}
+
+.related-results {
+    grid-column: 2 / span 1;
+    display: grid;
+    grid: 1fr / repeat(6, 1fr);
+    margin: 0px 0px 30px 0px;
+}
+
+.page-select {
+    grid-column: 2 / span 1;
+    margin: 0px 25% 30px 15%;
+}
+
+.list-left {
+    grid-column: 1 / span 1;
+}
+
+.list-right {
+    grid-column: 2 / span 1;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 0px 0px 30px 0px;
+    grid-column: 1 / span 2;
+}
+
+h5 {
+
+}
+
+h6 {
+
 }
