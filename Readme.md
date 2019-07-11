@@ -1,0 +1,1 @@
+A clone of a particular search engine's results page, made as an assignment for The Odin Project.
