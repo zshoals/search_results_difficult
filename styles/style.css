@@ -27,16 +27,76 @@ html {
 =============
 =============*/
 
+body {
+    height: auto;
+    width: 100%;
+}
+
 header {
+    height: auto;
+    width: 100%;
+}
+
+.main-content {
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+}
+
+.header-wrapper {
     display: grid;
     grid: 1fr 1fr / 1fr 7fr 5fr 1fr;
-    height: 300px;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    border-bottom: 1px solid lightgrey;
+}
+
+.central-wrapper {
+    display: grid;
+    grid-auto-rows: auto;
+    grid: 300px / 1fr 7fr 6fr;
+    height: auto;
     width: 100%;
     background-color: rgb(20, 20, 20);
 }
 
-body {
+.footer-wrapper {
     display: grid;
-    grid-auto-rows: auto;
-    grid: 300px / 1fr 7fr 6fr;
+    grid: 1fr 1fr / 1fr 7fr 5fr 1fr;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    border-top: 1px solid lightgrey;
+}
+
+#google-logo-header {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.search-form {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 5;
+}
+
+#search-bar {
+    width: 100%;
+}
+
+.profile-content {
+    grid-row: 1 / span 1;
+    grid-column: 14 / span 1;
+    float: right;
+}
+
+.sort-options {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    justify-items: end;
+    align-items: end;
 }
